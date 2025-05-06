@@ -5,10 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:ssr": "npx ng build && npx ng run ng-ssr-netlify:server",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ng-ssr-netlify": "node dist/ng-ssr-netlify/server/server.mjs",
-    "build:ssr": "ng build && ng run ng-ssr-netlify:server"
+    "serve:ssr:ng-ssr-netlify": "node dist/ng-ssr-netlify/server/server.mjs"
   },
   "private": true,
   "dependencies": {
